@@ -15,7 +15,8 @@ export default defineConfig({
       strict: false
     }
   },
-head:[["link",{rel:"icon",href:"/favicon.ico"}]],
+  base:"/665713/",
+head:[["link",{rel:"icon",href:"/665713/favicon.ico"}]],
     markdown:{
         html:true
     },
