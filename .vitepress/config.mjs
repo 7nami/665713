@@ -15,6 +15,9 @@ export default defineConfig({
       strict: false
     }
   },
+  plugins: [
+    vitePluginMd()
+  ],
   base:"/665713/",
 head:[["link",{rel:"icon",href:"/665713/favicon.ico"}]],
     markdown:{
