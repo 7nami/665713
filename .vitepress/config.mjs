@@ -1,0 +1,92 @@
+import { defineConfig } from 'vitepress'
+import { set_sidebar } from "../utils/auto_sidebar.mjs";
+
+console.log("config.mjs 已经被加载.");
+const sidebarConfig = set_sidebar("/front-end");
+console.log("生成的侧边栏配置:", JSON.stringify(sidebarConfig, null, 2));
+
+// https://vitepress.dev/reference/site-config
+export default defineConfig({
+  // 指定静态文件目录
+  publicDir: 'public',
+    // 配置静态文件路径
+  server: {
+    fs: {
+      strict: false
+    }
+  },
+head:[["link",{rel:"icon",href:"/favicon.ico"}]],
+    markdown:{
+        html:true
+    },
+    title: "665713",
+    description: "A VitePress Site",
+    themeConfig: {
+        outlineTitle: "在这页面上",
+        outline: [2, 6],
+        search: {
+            provider: 'local',
+            options: {
+                locales: {
+                    zh: {
+                        translations: {
+                            button: {
+                                buttonText: '搜索文档',
+                                buttonAriaLabel: '搜索文档'
+                            },
+                            modal: {
+                                noResultsScreen: "无法找到相关结果",
+                                resetButtonTitle: "清除查询条件",
+                                footer: {
+                                    selectText: "选择",
+                                    navigateText: "切换"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        logo: '/machine.png',
+        // https://vitepress.dev/reference/default-theme-config
+        nav: [
+            { text: '主页', link: '/' },
+            { text: '项目', items: [{ text: 'Easter eggs', link: '/markdown-examples' },{ text: '学习笔记', link: '/front-end' }] },
+            { text: '查找', items: [{ text: '弹幕首页', link: '/danmaku' },{ text: '弹幕1号', link: '/danmaku/fk-wjq' }]  },
+            // { text: 'front-end里的文件', items: sidebarConfig },
+
+        ],
+
+        sidebar: {
+            // "/front-end/": sidebarConfig,
+            "/front-end": set_sidebar("/front-end")
+
+
+            // '/': [
+            //     {
+            //         text: 'Examples',
+            //         items: [
+            //             { text: 'Markdown 示例', link: '/markdown-examples' },
+            //             { text: 'Runtime API 示例', link: '/api-examples' }
+            //         ]
+            //     },
+            //     {
+            //         text: 'Examples 2',
+            //         items: [
+            //             { text: 'Markdown 示例2', link: '/markdown-examples' },
+            //             { text: 'Runtime API 示例2', link: '/api-examples' }
+            //         ]
+            //     }
+            // ],
+        },
+        // sidebar: false,
+        // aside: "left", 
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/7nami' }
+        ],
+        footer: {
+            copyright: 'Copyright © 2024-present MJ'
+        }
+    }
+})

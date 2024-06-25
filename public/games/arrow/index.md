@@ -1,0 +1,1 @@
+[点击开始游玩箭头一下](/games/arrow/index2.html){target="_self"}
