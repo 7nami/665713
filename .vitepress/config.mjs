@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from "../utils/auto_sidebar.mjs";
+import vitePluginMd from 'vite-plugin-md';
+
 
 console.log("config.mjs 已经被加载.");
 const sidebarConfig = set_sidebar("/front-end");
@@ -7,21 +9,21 @@ console.log("生成的侧边栏配置:", JSON.stringify(sidebarConfig, null, 2))
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // 指定静态文件目录
-  publicDir: 'public',
+    // 指定静态文件目录
+    publicDir: 'public',
     // 配置静态文件路径
-  server: {
-    fs: {
-      strict: false
-    }
-  },
-  plugins: [
-    vitePluginMd()
-  ],
-  base:"/665713/",
-head:[["link",{rel:"icon",href:"/665713/favicon.ico"}]],
-    markdown:{
-        html:true
+    server: {
+        fs: {
+            strict: false
+        }
+    },
+    plugins: [
+        vitePluginMd(),
+    ],
+    base: "/665713/",
+    head: [["link", { rel: "icon", href: "/665713/favicon.ico" }]],
+    markdown: {
+        html: true
     },
     title: "665713",
     description: "A VitePress Site",
@@ -56,8 +58,8 @@ head:[["link",{rel:"icon",href:"/665713/favicon.ico"}]],
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '主页', link: '/' },
-            { text: '项目', items: [{ text: 'Easter eggs', link: '/markdown-examples' },{ text: '学习笔记', link: '/front-end' }] },
-            { text: '查找', items: [{ text: '弹幕首页', link: '/danmaku' },{ text: '弹幕1号', link: '/danmaku/fk-wjq' }]  },
+            { text: '项目', items: [{ text: 'Easter eggs', link: '/markdown-examples' }, { text: '学习笔记', link: '/front-end' }] },
+            { text: '查找', items: [{ text: '弹幕首页', link: '/danmaku' }, { text: '弹幕1号', link: '/danmaku/fk-wjq' }] },
             // { text: 'front-end里的文件', items: sidebarConfig },
 
         ],
