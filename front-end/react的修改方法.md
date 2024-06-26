@@ -12,9 +12,9 @@
 
 
 
-![image-20240605011738611](D:\665713\public\react\image-20240605011738611.png)
+![image-20240605011738611](react的修改方法.assets/image-20240605011738611.png)
 
-![image-20240529174310892](D:\665713\public\react\image-20240529174310892.png)
+![image-20240529174310892](react的修改方法.assets/image-20240529174310892.png)
 
 setState是react官方提供的修改数据的方法 微信小程序的setData就是学他的 setState应该是类组件的，函数组件应该是使用use开头的hook ↓
 
