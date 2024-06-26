@@ -20,8 +20,8 @@ export default defineConfig({
     plugins: [
         vitePluginMd(),
     ],
-    base: "/665713/",
-    head: [["link", { rel: "icon", href: "/665713/favicon.ico" }]],
+    // base: "/665713/",
+    head: [["link", { rel: "icon", href: "/favicon.ico" }]],
     markdown: {
         html: true
     },
@@ -54,7 +54,7 @@ export default defineConfig({
             }
         },
 
-        logo: '/665713/machine.png',
+        logo: '/machine.png',
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '主页', link: '/' },
