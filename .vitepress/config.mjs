@@ -54,7 +54,7 @@ export default defineConfig({
             }
         },
 
-        logo: '/machine.png',
+        logo: '/665713/machine.png',
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '主页', link: '/' },
