@@ -18,11 +18,11 @@ hero:
       link: /public/games/arrow/index
 
 features:
-  - title: Feature A
-    details: 特征1描述
-  - title: Feature B
-    details: 特征2描述
-  - title: Feature C
-    details: 特征3描述
+  - title: 💡 小建议
+    details: 选择永远大于努力
+  - title: 🧗 努力
+    details: 如果做一件事就努力把它做好
+  - title: 🤔 思考
+    details: 学会思考，不要人云亦云
 ---
 

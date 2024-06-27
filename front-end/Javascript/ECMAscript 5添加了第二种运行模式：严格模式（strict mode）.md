@@ -1,4 +1,8 @@
-## ECMAscript 5添加了第二种运行模式：["严格模式"](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)（strict mode）
+# ECMAscript 5添加了第二种运行模式：["严格模式"](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode)（strict mode）
+
+---
+
+#### 它的优势主要有以下几点：
 
 　　- 消除Javascript语法的一些不合理、不严谨之处，减少一些怪异行为;
 

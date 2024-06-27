@@ -4,11 +4,15 @@ React的三大属性是`state`、`props`、`refs`
 
 React 中没有专门的“计算属性”概念，但是可以使用类组件中的 `get` 方法或函数组件中的 `useMemo` 钩子来模拟计算属性的行为
 
+---
+
+
+
 
 
 # Vue常用属性
 
-data , methods , computed , watch , components , props , setup
+`data `, `methods `, `computed` , `watch` , `components `, `props `,` setup`
 
 `setup`是 Vue 3 引入的，并且强调 `setup` 用于组合式 API
 
@@ -21,12 +25,14 @@ data , methods , computed , watch , components , props , setup
 - **Vue 2** 中的 `ref` 用于访问 DOM 元素或子组件实例，不是响应式的。
 - **Vue 3** 中的 `ref` 用于创建响应式的数据引用，当其值改变时，会自动触发相关的更新。
 
+---
+
 
 
 ## 在 Vue 3 中，ref 和 reactive 都是用来创建响应式数据的方法，区别在于：
 
-- ref 用来创建一个包含单一值的响应式对象，其返回的是一个对象，其中的值被包装在 value 属性中。
-- reactive 用来创建包含多个值的响应式对象，其返回的是一个响应式的 Proxy 对象。
+- `ref` 用来创建一个包含单一值的响应式对象，其返回的是一个对象，其中的值被包装在` value `属性中。
+- `reactive` 用来创建包含多个值的响应式对象，其返回的是一个响应式的`Proxy 对象`。
 
 
 
