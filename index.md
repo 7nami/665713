@@ -10,10 +10,10 @@ hero:
     src: /M14.png
     alt: 背景图
   actions:
-    - theme: brand
-      text: Easter eggs
-      link: /markdown-examples
     - theme: alt
+      text: About
+      link: /markdown-examples
+    - theme: brand
       text: 箭头一下
       link: /public/games/arrow/index
 
