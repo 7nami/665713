@@ -9,6 +9,10 @@ console.log("生成的侧边栏配置:", JSON.stringify(sidebarConfig, null, 2))
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    optimizeDeps: {
+        include:['pdf'],
+        exclude:[],
+    },
     // 指定静态文件目录
     publicDir: 'public',
     // 配置静态文件路径
@@ -63,6 +67,7 @@ export default defineConfig({
             // { text: 'front-end里的文件', items: sidebarConfig },
 
         ],
+
 
         sidebar: {
             // "/front-end/": sidebarConfig,
