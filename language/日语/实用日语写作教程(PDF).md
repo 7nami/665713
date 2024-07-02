@@ -1,5 +1,5 @@
 [点击查看PDF文件](../../public/pdf/实用日语写作教程.pdf)
-
+[点击查看PDF文件2](../../public/实用日语写作教程.pdf)
 <!-- <script setup>
         import PDFComponent from './实用日语写作教程.pdf'
 </script> -->
