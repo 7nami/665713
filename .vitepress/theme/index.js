@@ -1,4 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
+
+import Mycomponent from "./components/Mycomponent.vue"
+import Video from "./components/Video.vue"
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
@@ -15,6 +18,8 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    app.component('Mycomponent' , Mycomponent),
+    app.component('Video',Video)
     vitepressBackToTop({
         //default
         threshold:300

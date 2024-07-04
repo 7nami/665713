@@ -64,6 +64,7 @@ export default defineConfig({
             { text: '主页', link: '/' },
             { text: '项目', items: [{ text: '外语学习', link: '/language' }, { text: '学习笔记', link: '/front-end' },{ text: '异国风情', link: '/international' }] },
             { text: '查找', items: [{ text: '弹幕首页', link: '/danmaku' }, { text: '弹幕1号', link: '/danmaku/fk-wjq' }] },
+            { text: '🔗PJSK贴纸自定义', link: 'https://st.3kn.jp/' },
             // { text: 'front-end里的文件', items: sidebarConfig },
 
         ],
