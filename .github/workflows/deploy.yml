@@ -34,6 +34,10 @@ jobs:
         with:
           node-version: 18
           cache: pnpm # 设置缓存
+
+      - name: Configure npm registry to use mirror
+        run: npm config set registry https://registry.npmmirror.com
+          
       - name: Setup Pages
         uses: actions/configure-pages@v3  # 在工作流程自动配置GithubPages
       - name: Install dependencies
