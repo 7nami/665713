@@ -33,15 +33,14 @@ jobs:
       - name: Install pnpm
         run: |
           npm install -g pnpm@9.4.0
+          export PATH="$(npm bin -g):$PATH"
           pnpm --version
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
       - name: Install dependencies
-        run: |
-          pnpm install
-          pnpm list
+        run: pnpm install
 
       - name: Build with VitePress
         run: |
