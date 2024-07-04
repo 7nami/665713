@@ -28,7 +28,7 @@ export default {
         //default
         threshold:300
     })
-  },
+  }, 
 }
 
 
