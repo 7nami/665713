@@ -32,10 +32,9 @@ jobs:
         run: npm config set registry https://registry.npmmirror.com
 
       - name: Install pnpm
-        run: npm install -g pnpm@9.4.0
-
-      - name: Add pnpm to PATH
-        run: echo "$HOME/.npm-global/bin" >> $GITHUB_PATH
+        run: |
+          npm install -g pnpm@9.4.0
+          echo "::add-path::$(npm config get prefix)/bin"
 
       - name: Verify pnpm installation
         run: pnpm --version
