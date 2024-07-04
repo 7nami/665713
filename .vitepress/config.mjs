@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
+import vue from '@vitejs/plugin-vue'
 import { set_sidebar } from "../utils/auto_sidebar.mjs";
 import vitePluginMd from 'vite-plugin-md';
+// import theme from './theme/index.js'
 
 
 console.log("config.mjs 已经被加载.");
@@ -22,7 +24,9 @@ export default defineConfig({
         }
     },
     plugins: [
+        vue(),
         vitePluginMd(),
+
     ],
     // base: "/665713/",
     head: [["link", { rel: "icon", href: "/favicon.ico" }]],
@@ -103,5 +107,93 @@ export default defineConfig({
         footer: {
             copyright: 'Copyright © 2024-present MJ'
         }
-    }
+    },
+    // theme,
 })
+
+
+
+
+/* 
+import { defineConfig } from 'vitepress'
+import vue from '@vitejs/plugin-vue'
+import { set_sidebar } from "../utils/auto_sidebar.mjs";
+import vitePluginMd from 'vite-plugin-md';
+
+console.log("config.mjs 已经被加载.");
+const sidebarConfig = set_sidebar("/front-end");
+console.log("生成的侧边栏配置:", JSON.stringify(sidebarConfig, null, 2));
+
+export default defineConfig({
+    optimizeDeps: {
+        include:['pdf'],
+        exclude:[],
+    },
+    // 指定静态文件目录
+    publicDir: 'public',
+    // 配置静态文件路径
+    server: {
+        fs: {
+            strict: false
+        }
+    },
+    plugins: [
+        vue(),
+        vitePluginMd(),
+    ],
+    // base: "/665713/",
+    head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+    markdown: {
+        html: true
+    },
+    title: "665713",
+    description: "A VitePress Site",
+    themeConfig: {
+        outlineTitle: "在这页面上",
+        outline: [2, 6],
+        search: {
+            provider: 'local',
+            options: {
+                locales: {
+                    zh: {
+                        translations: {
+                            button: {
+                                buttonText: '搜索文档',
+                                buttonAriaLabel: '搜索文档'
+                            },
+                            modal: {
+                                noResultsScreen: "无法找到相关结果",
+                                resetButtonTitle: "清除查询条件",
+                                footer: {
+                                    selectText: "选择",
+                                    navigateText: "切换"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+
+        logo: '/machine.svg',
+        nav: [
+            { text: '主页', link: '/' },
+            { text: '项目', items: [{ text: '外语学习', link: '/language' }, { text: '学习笔记', link: '/front-end' },{ text: '异国风情', link: '/international' }] },
+            { text: '查找', items: [{ text: '弹幕首页', link: '/danmaku' }, { text: '弹幕1号', link: '/danmaku/fk-wjq' }] },
+            { text: '🔗PJSK贴纸自定义', link: 'https://st.3kn.jp/' },
+        ],
+        sidebar: {
+            "/front-end": set_sidebar("/front-end"),
+            "/language": set_sidebar("/language"),
+            "/danmaku": set_sidebar("/danmaku"),
+            "/international": set_sidebar("/international"),
+        },
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/7nami' }
+        ],
+        footer: {
+            copyright: 'Copyright © 2024-present MJ'
+        }
+    },
+})
+ */

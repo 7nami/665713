@@ -1,0 +1,38 @@
+/* var.css */
+:root {
+    --vp-c-brand-1: #66CCFF;
+    --vp-c-brand-2: #3399FF;
+    --vp-c-brand-3: #3366CC;
+    /* 提示框背景颜色 */
+    --vp-custom-block-tip-bg: var(--vp-c-green-soft);
+}
+
+/* 提示框 */
+.custom-block.tip {
+    border-color: var(--vp-c-green-2);
+}
+
+/* 警告框 */
+.custom-block.warning {
+    /* border-color: #d97706; */
+    border-color: var(--vp-c-yellow-2);
+}
+
+/* 危险框 */
+.custom-block.danger {
+    /* border-color: #f43f5e; */
+    border-color: var(--vp-c-red-2);
+}
+
+.dark {
+    --vp-c-brand-1: #39C5BB;
+    --vp-c-brand-2: #008080;
+    --vp-c-brand-3: #004040;
+}
+
+.vp-doc a {
+    text-decoration: none;
+}
+
+
+/* 以前的vp-c-brand已弃用 */
