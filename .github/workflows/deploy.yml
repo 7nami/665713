@@ -33,12 +33,15 @@ jobs:
       - name: Install pnpm
         run: |
           npm install -g pnpm@9.4.0
+          pnpm --version
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          pnpm install
+          pnpm list
 
       - name: Build with VitePress
         run: |
