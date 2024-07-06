@@ -9,6 +9,7 @@ import './style.css'
 import vitepressBackToTop from 'vitepress-plugin-back-to-top'
 import 'vitepress-plugin-back-to-top/dist/style.css'
 import "./style/index.css" //修改主题色的那个css
+import googleAnalytics from 'vitepress-plugin-google-analytics'
 
 
 /** @type {import('vitepress').Theme} */
@@ -20,14 +21,17 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({ app, router, siteData , ctx }) {
     // ...
     app.component('Mycomponent' , Mycomponent),
     app.component('Video',Video),
     vitepressBackToTop({
         //default
         threshold:300
-    })
+    }),
+    googleAnalytics({
+        id: 'G-YTQLR7YHF8', // Replace with your GoogleAnalytics ID, which should start with the 'G-'
+      })
   }, 
 }
 
