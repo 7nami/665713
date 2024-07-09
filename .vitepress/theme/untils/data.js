@@ -1,46 +1,266 @@
-import type { NavData } from './.vitepress/theme/types'
+// import  { NavData } from '../utils/types'
 
-export const NAV_DATA: NavData[] = [
+export const NAV_DATA = [
+  {
+    title: '搜索引擎',
+    items: [
+      {
+        icon: 'https://www.baidu.com/favicon.ico',
+        title: 'Baidu',
+        badge: {
+          text: '流氓',
+          type: 'info',
+        },
+        desc: "What's Your Problem?",
+        link: 'https://www.baidu.com'
+      },
+      {
+        icon: 'https://ss.360tres.com/static/121a1737750aa53d.ico',
+        title: '360搜索',
+        badge: {
+          text: '3721',
+          type: 'tip',
+        },
+        desc: '用于查询骚扰电话',
+        link: 'https://www.so.com/'
+      },
+      {
+        icon: 'https://www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png',
+        title: '微软Bing',
+        badge: {
+          text: 'global版',
+          type: 'warning',
+        },
+        desc: '强烈建议使用国外IP访问',
+        link: 'https://global.bing.com/?FORM=HPCNEN&setmkt=en-us&setlang=en-us'
+      },
+      {
+        icon: 'https://www.google.com/favicon.ico',
+        title: 'Google',
+        badge: {
+          text: 'ncr无国别跳转版',
+          type: 'warning',
+        },
+        desc: '谷人希',
+        link: 'https://www.google.com/ncr'
+      },
+      {
+        icon: 'https://cdn.search.brave.com/serp/v2/_app/immutable/assets/favicon.acxxetWH.ico',
+        title: 'Brave搜索',
+        badge: {
+          text: '基于Bing搜索',
+          type: 'danger',
+        },
+        desc: '是的,就是那个Brave浏览器',
+        link: 'https://search.brave.com/ '
+      },
+      {
+        icon: 'https://www.phind.com/images/favicon.png',
+        title: 'phind搜索',
+        badge: {
+          text: 'AI搜索',
+          type: 'info',
+        },
+        desc: '搜索结果较少',
+        link: 'https://www.phind.com/'
+      },
+      {
+        icon: 'https://you.com/favicon/favicon-32x32.png',
+        title: 'You.com',
+        badge: {
+          text: 'AI搜索',
+          type: 'info',
+        },
+        desc: '更倾向于AI回答的搜索引擎',
+        link: 'https://you.com/ '
+      },
+      {
+        icon: 'https://duckduckgo.com/favicon.ico ',
+        title: 'DuckDuckGo',
+        badge: {
+          text: '推荐使用',
+          type: 'warning',
+        },
+        desc: '保护隐私,不追踪',
+        link: 'https://duckduckgo.com/'
+      },      
+      {
+        icon: ' https://yastatic.net/s3/home-static/_/nova/438e8052.png',
+        title: 'Yandex.com',
+        badge: {
+          text: '国际版',
+          type: 'info',
+        },
+        desc: '俄罗斯老牌搜索引擎',
+        link: ' https://yandex.com/'
+      },      
+      {
+        icon: ' https://yastatic.net/s3/web4static/_/v2/AppFavicon-Icon_size64_ru.5f7303b2887f57.link.png',
+        title: 'Yandex.ru',
+        badge: {
+          text: '俄联网版',
+          type: 'info',
+        },
+        desc: '俄罗斯语注意',
+        link: ' https://ya.ru/'
+      },      
+      {
+        icon: 'https://s.yimg.jp/c/icon/s/bsc/2.0/favicon.ico',
+        title: 'yahoo!jp',
+        badge: {
+          text: ' ',
+          type: 'info',
+        },
+        desc: '日本雅虎',
+        link: 'https://www.yahoo.co.jp/'
+      },      
+      {
+        icon: 'https://sg.search.yahoo.com/favicon.ico',
+        title: 'yahoo!sg',
+        badge: {
+          text: '基于Bing搜索',
+          type: 'danger',
+        },
+        desc: '新加坡版雅虎搜索',
+        link: ' https://sg.search.yahoo.com/'
+      },      
+      {
+        icon: 'https://lf3-search.searchpstatp.com/obj/card-system/favicon_5995b44.ico',
+        title: '头条搜索',
+        badge: {
+          text: '今日头条',
+          type: 'danger',
+        },
+        desc: '不是很好用',
+        link: 'https://so.toutiao.com/'
+      },
+    //   {
+    //     icon: ' ',
+    //     title: ' ',
+    //     badge: {
+    //       text: ' ',
+    //       type: 'info',
+    //     },
+    //     desc: ' ',
+    //     link: ' '
+    //   },
+    ]
+  },
+
+
   {
     title: '常用工具',
     items: [
       {
         icon: 'https://caniuse.com/img/favicon-128.png',
         title: 'Can I use',
+        badge: {
+          text: 'API',
+          type: 'info',
+        },
         desc: '前端 API 兼容性查询',
         link: 'https://caniuse.com'
       },
       {
         icon: 'https://tinypng.com/images/apple-touch-icon.png',
         title: 'TinyPNG',
+        badge: {
+          text: '图片处理',
+          type: 'tip',
+        },
         desc: '在线图片压缩工具',
         link: 'https://tinypng.com'
       },
       {
         icon: 'https://devtool.tech/logo.svg',
         title: '开发者武器库',
+        badge: {
+          text: 'Toolbox',
+          type: 'warning',
+        },
         desc: '开发者武器库，做开发者最专业最好用的专业工具箱',
         link: 'https://devtool.tech'
       },
       {
-        icon: 'https://tool.lu/favicon.ico',
-        title: '在线工具',
-        desc: '开发人员的工具箱',
-        link: 'https://tool.lu'
+        icon: 'https://ip.fm/logo.svg',
+        title: 'IP.FM',
+        badge: {
+          text: '推荐使用(国内)',
+          type: 'danger',
+        },
+        desc: '常用IP查询',
+        link: 'https://ip.fm/'
       },
       {
-        icon: '/icons/json-cn.ico',
+        icon: 'https://ip.sb/favicon-32x32.png',
+        title: 'IP.SB',
+        badge: {
+          text: '推荐使用(国外)',
+          type: 'danger',
+        },
+        desc: '常用IP查询',
+        link: 'https://ip.sb/'
+      },
+      {
+        icon: 'https://ipleak.net/static/images/icons/icon-144x144.png',
+        title: 'IPleak.net',
+        badge: {
+          text: '推荐使用(国外)',
+          type: 'danger',
+        },
+        desc: 'IP泄露检测',
+        link: 'https://ipleak.net/'
+      },
+      {
+        icon: 'https://browserleaks.com/favicon.ico',
+        title: 'Browserleaks',
+        badge: {
+          text: '推荐使用(国外)',
+          type: 'danger',
+        },
+        desc: '浏览器信息泄露检测',
+        link: 'https://browserleaks.com/ip'
+      },
+      {
+        icon: 'https://static.json.cn/r/img/favicon/favicon.ico',
         title: 'Json 中文网',
+        badge: {
+          text: 'Json',
+          type: 'info',
+        },
         desc: 'JSON 在线解析及格式化验证',
         link: 'https://www.json.cn'
-      }
+      },
+      {
+        icon: 'https://www.apple.com/favicon.ico',
+        title: '苹果地图',
+        badge: {
+          text: '鸭子调用',
+          type: 'danger',
+        },
+        desc: 'DuckDuckGo与苹果合作的网页版',
+        link: 'https://duckduckgo.com/?q=asia&iaxm=maps '
+      },
+      {
+        icon: 'https://maps.here.com/favicon.png',
+        title: 'HERE地图',
+        badge: {
+          text: '致敬ovi地图',
+          type: 'info',
+        },
+        desc: '诺基亚遗产,可惜被卖了',
+        link: 'https://maps.here.com/'
+      },
     ]
   },
+
+
+
   {
     title: 'AI 导航',
     items: [
       {
-        icon: '/icons/chatgpt.png',
+        icon: 'https://cdn.oaistatic.com/_next/static/media/favicon-32x32.630a2b99.png',
         title: 'ChatGPT（最强）',
         link: 'https://chat.openai.com/chat'
       },
@@ -62,19 +282,25 @@ export const NAV_DATA: NavData[] = [
     ]
   },
   {
-    title: '茂茂的站点导航',
+    title: '杂项',
     items: [
       {
-        icon: '/logo.png',
-        title: '前端日常笔记',
-        desc: '日常笔记记录（零零散散啥都记系列）',
-        link: 'https://github.com/maomao1996/daily-notes'
+        icon: 'https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_96h.png',
+        title: 'QQ邮箱',
+        desc: '腾讯为数不多的良心产品',
+        link: 'https://mail.qq.com'
       },
       {
-        icon: '/logo.png',
-        title: '前端思维导图',
-        desc: '用思维导图的方式总结个人所学知识',
-        link: 'https://mindmap.fe-mm.com'
+        icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAT2SURBVHgBxVhNTFRXFD73zQ/lT35jxASVWEKTkghJy6JqAok2cSPd2J9VhS66QRKSYlO60G4gwS4adA2YpklTF21dyEITaCyumswsoZrUOGmxltFBmRnk592e7765b97MvPdmSuPwbd5j7n33fPec75xzuYLycP7ESq8hxcfSEL1C0hF6BZBEUSFF1BQ712d/bVlwjgmbSO8f9cZ2zQyR+R6VE1LMmqHkyOxCW8ImZJGpmufXLtoDwGMymOoDKUOx2qr6Zq/IKPtsmx0yo96VZsiYL/ZRR1eIOrrD6j3+eIeWI5u0+th0nVtVI+idM6/xU+1XzV2ObhUzQSaZfUEhjfNZJRWi+YBBg2P7bDIaq0zq+6l1itx9mfP7cSby4XCtIpVFtSI1Pf7ccxMAkskQgo6RD0avNthkVld2aIkXtogGaGi8jsdC9tzukxWKvCbz6P62Ig5gjaHxevKH6A2Sj3awWxgGpiee0+KtDZvM6NV69ewfqKbJiEoQ9kyNRZxJXLmQsMmcOldJH7HXWtuD/F5Fd26kPPjQEYN8AELA4tyGTUYbhPv1zkGs9fWATf7aF2s2GeDOjbQKGfCGw6Nu8CXUlDEA1+cjvpLVQlOLYQsYiD0onL8UsUTd3BKgXROKZ3Z5qD3gQjb7aeqFpNR6lmCHixf0GskX3qIuSkjv6viZSjrNsddQmfflPvWO0MAjsQc7dpgg7GYHYeis+6QV/ntzG34mSQye+Ft6DSJbLs002tqAwTR7A+LUmBx+xvqwiMMzF6ca7DHoBmHXYcL3n5+Lkx98PZRalzliVuJ1kFmOblLsfla8MdZazKE3JXiHZpxr7YoQXN0/WO053tEVZg82KEEjRPCmk3DBerwW1vSD59dI+bMZMvDUba4d9+bSLGBio4GMTqxUHxyrVaLWoUXxvDmTVN5DBqLt9A/WKAlgzSX2rA5zPjw1dGm6kTPD4ou4O+uKxsWp+oKWglZybWytYC48d5nXBKCtyeGEm1n3kMH9mgyKohsZ4Gf2Qj7Q39wAbd3+warQ2ISzbhUlpAuiRShNXoDb0d80QNyLvCLlKJit7YHSCTnhtRN7vLboEjacxdMLrqvFHUcECNIL6F/OY4bV07yzDKcBDWe5KEpoNXMAA06/X+WayiAyNFF4nPhEHT8MF/JBVfEBZKGXtwLdh0Yve5HSC/T2V1I1E1h7alI4bNWfoYk6O80hfPS9lsNBqmsyqOdUBaW5VKTZKPTYx99/+lWdvfYVzjCUEjf4to6zJRQyCHXyAlJY5rQZLyAzb04nPcc9PQQgi7BzhCw/DNjhre9S9O3X68r9W5tW4wxVCDr6ZqHu4HHUp//VXJ1A49SCRTgid711YPU8CDyk5sCLXpV514TKhdKLSJlQMqG3+yqostqgg20B6uzJ7V/vflCZ87dzHPMb95e+b4NP+g9LmXiwLUhvManOngr1rnG0M6SI4umcq4Gxhv2BUkxwnoqoIU3zl1Imp5OSFxf07EluhUVGPX1iumbWf4WQZjTQdfizhOD/qIvPJvrr4Tb98ycfY1OSiVkZBpK/zb9U4/q3nHci26uPft/2NWEKOaIaEWfaj/wo7zVMPqScnV48MKDUZgbDA7gSoT0CbJuh9AjeFaHZhYaEDIb7pDSvU/nxk74bwh8F9x64nuGrPL4RMY6JV3RnJDmzhSkXWDMFV3r/Ag+tFSB/QnxjAAAAAElFTkSuQmCC',
+        title: '完美邮箱',
+        desc: '不知道什么时候倒闭',
+        link: 'https://www.88.com/'
+      },
+      {
+        icon: 'https://account.proton.me/assets/favicon.ico',
+        title: 'Proton Mail',
+        desc: '美剧⟪黑客军团⟫指定邮箱',
+        link: 'https://account.proton.me/mail'
       },
       {
         icon: 'https://qwerty.fe-mm.com/apple-touch-icon.png',
@@ -83,11 +309,17 @@ export const NAV_DATA: NavData[] = [
         link: 'https://qwerty.fe-mm.com'
       },
       {
-        icon: '/logo.png',
-        title: 'mmPlayer',
-        desc: 'mmPlayer 在线音乐播放器',
-        link: 'https://netease-music.fe-mm.com'
-      }
+        icon: 'https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico',
+        title: 'Spotify',
+        desc: 'Spotify 在线音乐播放器',
+        link: 'https://open.spotify.com/'
+      },
+      {
+        icon: 'https://d35aaqx5ub95lt.cloudfront.net/favicon.ico',
+        title: '多邻国Duolingo',
+        desc: '是的,这玩意是有网页版的',
+        link: 'https://www.duolingo.com/learn'
+      },
     ]
   },
   {
@@ -248,11 +480,10 @@ export const NAV_DATA: NavData[] = [
         link: 'https://svelte.dev'
       },
       {
-        // icon: 'https://simpleicons.org/icons/jquery.svg',
-        icon: '/icons/jquery.svg',
+        icon: 'https://api.jquery.com/wp-content/themes/api.jquery.com/i/favicon.ico',
         title: 'jQuery API 中文文档',
         desc: '一个兼容多浏览器的 JavaScript 框架',
-        link: 'https://jquery.cuishifeng.cn'
+        link: 'https://api.jqueryjs.cn/'
       }
     ]
   },
@@ -289,10 +520,11 @@ export const NAV_DATA: NavData[] = [
         link: 'https://developers.weixin.qq.com/miniprogram/dev/framework/'
       },
       {
-        icon: '/icons/taro.svg',
+        icon: 'https://docs.taro.zone/img/icons/icon-144x144.png',
         title: 'Taro',
         desc: '多端统一开发解决方案',
-        link: 'https://taro.jd.com'
+        // link: 'https://taro.jd.com'
+        link: 'https://taro-docs.jd.com/docs/'
       },
       {
         icon: 'https://web-assets.dcloud.net.cn/unidoc/zh/icon.png',
@@ -312,7 +544,7 @@ export const NAV_DATA: NavData[] = [
     title: 'Node 相关',
     items: [
       {
-        icon: '/icons/nodejs.svg',
+        icon: 'https://nodejs.org/static/images/favicons/favicon.png',
         title: 'Node.js',
         desc: 'Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境',
         link: 'https://nodejs.org/zh-cn'
@@ -353,13 +585,13 @@ export const NAV_DATA: NavData[] = [
         link: 'https://echarts.apache.org/zh/index.html'
       },
       {
-        icon: 'https://antv.vision/icons/icon-72x72.png',
+        icon: 'https://mdn.alipayobjects.com/huamei_qa8qxu/afts/img/A*7svFR6wkPMoAAAAAAAAAAAAADmJ7AQ/original',
         title: 'AntV',
         desc: '蚂蚁集团全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
         link: 'https://antv.vision/zh/'
       },
       {
-        icon: 'https://d3js.org/favicon.png',
+        icon: 'https://d3js.org/logo.png',
         title: 'D3.js',
         desc: '一个遵循 Web 标准用于可视化数据的 JavaScript 库',
         link: 'https://d3js.org'
@@ -494,13 +726,13 @@ export const NAV_DATA: NavData[] = [
         link: 'https://developer.mozilla.org/zh-CN'
       },
       {
-        icon: 'https://static.runoob.com/images/favicon.ico',
+        icon: 'https://www.runoob.com/wp-content/themes/runoob/assets/img/runoob-logo.png',
         title: '菜鸟教程',
         desc: '学的不仅是技术，更是梦想！',
         link: 'https://www.runoob.com'
       },
       {
-        icon: '/icons/es6.svg',
+        icon: 'https://es6.ruanyifeng.com/favicon.ico',
         title: 'ES6 入门教程',
         desc: '阮一峰的网络日志',
         link: 'http://es6.ruanyifeng.com'
@@ -545,7 +777,7 @@ export const NAV_DATA: NavData[] = [
       {
         title: '博客园',
         // icon: 'https://common.cnblogs.com/favicon.ico',
-        icon: '/icons/cnblogs.svg',
+        icon: 'https://www.cnblogs.com/images/logo.svg',
         desc: '博客园是一个面向开发者的知识分享社区',
         link: 'https://www.cnblogs.com'
       },
@@ -585,17 +817,23 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.youtube.com'
       },
       {
-        icon: '/icons/twitter.svg',
+        icon: 'https://abs.twimg.com/favicons/twitter.3.ico',
         title: 'Twitter',
         // desc: '',
         link: 'https://twitter.com'
       },
       {
-        icon: '/icons/pixiv.png',
+        icon: 'https://www.pixiv.net/favicon.ico',
         title: 'Pixiv',
         // desc: '',
         link: 'https://www.pixiv.net'
-      }
+      },
+      {
+        icon: 'http://zhuayuya.com/favicon.svg',
+        title: '抓鱼鸭',
+        // desc: '前身是摸鱼.cn',
+        link: 'http://zhuayuya.com/'
+      },
     ]
   }
 ]
