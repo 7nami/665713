@@ -34,7 +34,7 @@ export default defineConfig({
         html: true
     },
     title: "665713",
-    description: "A VitePress Site",
+    description: "665713,一个记录学习的博客,包含IT常用知识、前端源码笔记、各种奇淫技巧、日常提效工具等",
     themeConfig: {
         outlineTitle: "在这页面上",
         outline: [2, 6],
