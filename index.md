@@ -32,11 +32,11 @@ features:
 <style>
   :root {
   /* 标题渐变色 */
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #FFA500, #FFE211);
+  --vp-home-hero-name-color: transparent !important;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #FF7F00, #FFA500, #FFB600) !important;
 
   /*图标背景渐变色 */
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #41b6e6 50%, #db3eb1 50%);
-  --vp-home-hero-image-filter: blur(55px);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #41b6e6 10%, #db3eb1 100%) !important;
+  --vp-home-hero-image-filter: blur(52px) !important;
 }
 </style>
