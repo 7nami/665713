@@ -1,6 +1,6 @@
-![image-20240605011738611](./react的修改方法.assets/image-20240605011738611.png)
+![image-20240605011738611](./React的修改方法.assets/image-20240605011738611.png)
 
-![image-20240529174310892](./react的修改方法.assets/image-20240529174310892.png)
+![image-20240529174310892](./React的修改方法.assets/image-20240529174310892.png)
 
 `setState`是react官方提供的修改数据的方法；微信小程序的setData就是学他的 
 

@@ -1,4 +1,4 @@
-在应用外部的css中不能在括号内部写入分号
+在应用外部的css中不能在内部写入分号
 
 ```vue
 <style scoped lang="scss">
