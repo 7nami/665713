@@ -17,3 +17,4 @@ new promise((resolve,reject)=>{
 console.log('5')
 ```
 
+请计算输出顺序：
