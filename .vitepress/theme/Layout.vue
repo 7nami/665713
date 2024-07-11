@@ -1,14 +1,37 @@
 <!-- .vitepress/theme/Layout.vue -->
 <template>
-    <DefaultTheme.Layout />
+    <DefaultTheme.Layout >
+    <template #doc-after>
+    <div style="margin-top: 24px">
+        <Giscus
+          :key="page.filePath"
+          repo="7nami/665713"
+          repo-id="R_kgDOMOEjWg"
+          category="Announcements"
+          category-id="DIC_kwDOMOEjWs4Cgt2R"
+          mapping="pathname"
+          strict="0"
+          reactions-enabled="1"
+          emit-metadata="0"
+          input-position="bottom"
+          theme="preferred_color_scheme"
+          lang="zh-CN"
+          loading="lazy"
+          crossorigin="anonymous"
+        />
+    </div>
+
+    </template>
+</DefaultTheme.Layout >
   </template>
   
   <script setup>
-  import { useData } from 'vitepress'
+  import Giscus from '@giscus/vue'
+  import { useData , inBrowser } from 'vitepress'
   import DefaultTheme from 'vitepress/theme'
-  import { nextTick, provide } from 'vue'
+  import { nextTick, provide,watch } from 'vue'
   
-  const { isDark } = useData()
+  const { isDark,page } = useData()
   
   const enableTransitions = () =>
     'startViewTransition' in document &&
@@ -44,6 +67,24 @@
       }
     )
   })
+
+
+  // 监听 isDark 的变化并通知 Giscus 组件
+watch(isDark, (dark) => {
+  if (!inBrowser) return;
+
+  const iframe = document
+    .querySelector("giscus-widget")
+    ?.shadowRoot?.querySelector("iframe");
+
+  iframe?.contentWindow?.postMessage(
+    { giscus: { setConfig: { theme: dark ? "dark" : "light" } } },
+    "https://giscus.app"
+  );
+});
+
+console.log(page , "我是page.");
+
   </script>
   
   <style>

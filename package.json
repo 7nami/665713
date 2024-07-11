@@ -12,6 +12,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "@giscus/vue": "^3.0.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "vite": "^5.3.3",
     "vite-plugin-md": "^0.21.5",
