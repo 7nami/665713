@@ -24,7 +24,7 @@ features:
     link: https://665713.xyz/nav
     linkText: 导航页
 
-  - title: 2048
+  - title: 2048网页版
     details: 游玩网页小游戏
     icon: 🟨
     link: https://665713.xyz/games/2048/index.html
