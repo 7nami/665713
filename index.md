@@ -23,8 +23,12 @@ features:
     details: 非常好用的一些站点合集
     link: https://665713.xyz/nav
     linkText: 导航页
-  - title: 🧗 施工中...
-    details: 如果做一件事就努力把它做好
+
+  - title: 2048
+    details: 游玩网页小游戏
+    icon: 🟨
+    link: https://665713.xyz/games/2048/index.html
+
   - title: 🔨 施工中...
     details: Loading....
 
