@@ -29,8 +29,10 @@ features:
     icon: 🟨
     link: https://665713.xyz/games/2048/index.html
 
-  - title: 🔨 施工中...
-    details: Loading....
+  - title: 贪吃蛇
+    details: 游玩网页贪食蛇
+    icon: 🐍
+    link: https://665713.xyz/games/snake/index.html
 
 ---
 
