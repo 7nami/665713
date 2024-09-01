@@ -194,7 +194,7 @@ onMounted(() => {
 
 使用 `ref` 替代 `reactive`：
 
-```js
+```vue
 <template>
   {{ state.a }}
   {{ state.b }}
