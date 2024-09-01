@@ -14,14 +14,14 @@
 
 #### **最懂Vue的人都这么说了:推荐ref!!!!!!**
 
-<img src="https://developer.qcloudimg.com/http-save/yehe-5471653/de123e5a9c3fa7a35311dfe6c72c21ad.png" style="zoom:67%;" />
+
 
 ### **`reactive`和 `ref` 对比**
 
 | reactive                                 | ref                                                          |
 | :--------------------------------------- | :----------------------------------------------------------- |
 | ❌ 只支持对象和数组（引用数据类型）       | ✅ 支持基本数据类型 + 引用数据类型                            |
-| ✅ 在 <script> 和 <template> 中无差别使用 | ❌ 在 <script> 和 <template> 使用方式不同（在 <script> 中要使用 .value） |
+| ✅ 在 <script> 和 <template> 中无差别使用 | ❌ 在 <script> 和 <template> 使用方式不同（在 ‘script’ 中要使用 .value） |
 | ❌ 重新分配一个新对象会丢失响应性         | ✅ 重新分配一个新对象不会失去响应                             |
 | 能直接访问属性                           | 需要使用 .value 访问属性                                     |
 | ❌ 将对象传入函数时，失去响应             | ✅ 传入函数时，不会失去响应                                   |
