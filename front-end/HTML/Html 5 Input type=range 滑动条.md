@@ -124,7 +124,7 @@ $("input[name='volumeInput']").on('touchend', function () {
 
 > W3c HTML5 新的 Input 类型：[http://www.w3school.com.cn/html5/html*5*form*input*types.asp](http://www.w3school.com.cn/html5/html_5_form_input_types.asp)
 >
-> HTML <fieldset> 标签：http://www.w3school.com.cn/tags/tag_fieldset.asp
+> HTML` <fieldset>` 标签：http://www.w3school.com.cn/tags/tag_fieldset.asp
 >
 > oninput 事件（菜鸟教程）:http://www.runoob.com/jsref/event-oninput.html
 >
@@ -332,7 +332,7 @@ $("input[name='volumeInput']").on('touchend', function () {
 
 > 温馨提示：亲测在苹果的 iPad 的 Safari 浏览器上时，如果滑动条外围使用了 "-webkit-overflow-scrolling: touch;"样式，则滑动条偶尔会出现滑动失灵的情况，建议此时不要设置 "-webkit-overflow-scrolling: touch;"样式，或者设置为 "-webkit-overflow-scrolling: auto;"
 >
-> ```bash
+> ```markdown
 > -webkit-overflow-scrolling 属性控制元素在移动设备上是否使用滚动回弹效果.
 > 
 > auto: 使用普通滚动, 当手指从触摸屏上移开，滚动会立即停止。
