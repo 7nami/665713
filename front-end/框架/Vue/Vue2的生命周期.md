@@ -13,7 +13,43 @@
 
 ##### PS.Vue组件首次加载时会加载哪些生命周期函数？
 
-1. beforeCreate 组件创建前
-2. created 组件创建完成
-3. beforeMount 组件挂载前
-4. mounted 组件挂载完成
+1. beforeCreate 组件创建前 （没有dom）
+2. created 组件创建完成 （没有dom）
+3. beforeMount 组件挂载前 （准备dom）
+4. mounted 组件挂载完成 （准备dom）
+
+
+
+##### 父组件引入子组件，那么生命周期执行的顺序是？
+
+> 父：beforeCreate、created、beforeMount
+>
+> 子：beforeCreate、created、beforeMount、mounted
+>
+> ...
+>
+> 父：mounted
+
+##### 发送请求在created还是mounted？
+
+> 这个问题具体看业务和项目的情况，因为组件的加载顺序是，父组件引入子组件，那么先执行父的前三个生命周期，再执行子的前四个生命周期，如果我们的业务是父组件引入子组件并且优先加载子组件的数据，那么在父组件中当前的请求要放在monted中。如果，当前组件没有父子依赖关系，那么放在哪个生命周期请求都是可以的
+
+##### 在created中如何获取dom
+
+> 1. 只要写异步代码，获取dom是在异步中获取的就可以了，例如：setTimeout、请求、Promise.xxx()等等
+> 2. 使用Vue内置的this.$nextTick
+
+##### beforeCreate和created有什么区别？
+
+> beforeCreate没有$data
+>
+> created中有$data
+>
+> created可以拿到methods的方法
+>
+> beforeCreate拿不到methods的方法
+
+##### 为什么发送请求不在beforeCreate里？
+
+> 因为：如果请求是在methods里封装好了，在beforeCreate调用时，`beforeCreate` 中实例的方法和数据还没有被初始化（会报错）。
+
