@@ -98,7 +98,7 @@
 
 2、实现的效果和 Windows 系统音量的操作类似，如下所示：
 
-![1](Html5Inputtype=range滑动条.assets/1.gif)
+![1](./Html5Inputtype=range滑动条.assets/1.gif)
 
 > 1）如果滑动数据变化后需要立即向服务器发送的，可以在 oninput 事件中操作，但这样可能会导致请求过于频繁
 >
@@ -138,7 +138,7 @@ $("input[name='volumeInput']").on('touchend', function () {
 
 ## 多个滑动条编码示例
 
-![2](Html5Inputtype=range滑动条.assets/2.gif)
+![2](./Html5Inputtype=range滑动条.assets/2.gif)
 
 实现代码如下：
 
