@@ -132,9 +132,7 @@ $("input[name='volumeInput']").on('touchend', function () {
 >
 > JQery 文档：http://jquery.cuishifeng.cn/
 
-示例中使用的图标资源：
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/05e1b8223af5ed9d5b7def9071195dee.png)   ![img](https://i-blog.csdnimg.cn/blog_migrate/0099e3d2008c822e65798f954a0c9d5a.png)
 
 ## 多个滑动条编码示例
 
@@ -147,7 +145,6 @@ $("input[name='volumeInput']").on('touchend', function () {
 <html>
     <head>
         <meta charset="UTF-8">
-
         <!-- 适配移动端-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <title>input type="range"实现音量控制</title>
