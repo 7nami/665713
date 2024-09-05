@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>超时重连Promise</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -29,8 +29,8 @@
                     if (!res.ok) {
                         throw new Error(res.statusText + "网络超时或其他错误")
                     }
-                    return resolve(res)
-                    // return resolve(res.json())
+                    // return resolve(res)
+                    return resolve(res.json())
                 }).catch((error) => {
                     if (count <= retries) {
                         console.log('正在重连' + count + '次');
@@ -45,8 +45,8 @@
         })
     }
 
-    fetchWithRetry(url,3).then((data) => console.log(data))
-    .catch((error) => console.log(error))
+    fetchWithRetry(url,3).then((data) => console.log(data,'我是fetchWithRetry的data'))
+    .catch((error) => console.log(error,'我是fetchWithRetry的error'))
 
 </script>
 
