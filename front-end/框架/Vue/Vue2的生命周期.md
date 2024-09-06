@@ -53,3 +53,12 @@
 
 > 因为：如果请求是在methods里封装好了，在beforeCreate调用时，`beforeCreate` 中实例的方法和数据还没有被初始化（会报错）。
 
+在`created`和`mounted`去请求数据有什么区别？
+
+`created`：在渲染前调用，通常先初始化属性，然后做渲染
+
+`mounted`:在模板渲染完成后，一般是初始化页面后，再对元素节点进行操作，在这里请求数据可能出现闪屏，`created`里就不会
+
+一般用created比较多，请求的数据对DOM有影响用`created`
+
+如果请求的数据对DOM无关那么可以放在`mounted`
