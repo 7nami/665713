@@ -15,3 +15,6 @@
 | API风格                  | Event    | Promise  |
 | 活跃度                   | 停止更新 | 还在更新 |
 
+axios是基于promise的，他用的是XHR , 要发fetch请求可以自己手写。
+Ajax，尤其是在用jQuery的时候，是基于`回调函数`处理异步操作的（处理成功和失败的情况下，需要传递回调函数给 success 和 error 选项）
+
